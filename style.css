@@ -1,0 +1,211 @@
+*{
+    font-family: cursive;
+}
+
+
+.nav-container{
+    height: 80px;
+    margin-top: 10px;
+    background-color: hsla(0, 100%, 90%, 0.3);
+    padding: 4px;
+    border-bottom-right-radius:  15px;
+    border-bottom-left-radius:15px ;
+    margin-bottom: 30px;
+    color: #fdfdfd;
+  
+}
+
+.nav-items{
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    
+
+}
+
+.nav-bar-item a {
+    color: #fff;
+  text-decoration: none;
+  margin-top: 6px;
+   
+}
+
+.hero{
+   
+    background-image: url(./img/bmw.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    height: 50%;
+    display: flex;
+    align-items: end;
+}
+
+
+.hero-paragraph{
+    color: #fff;
+    width: 100%;
+    height: 300px;
+    
+}
+.hero p{
+    text-align: center;
+    display: flex;
+    align-items: end;
+    padding: 13px;
+}
+
+.cards-contaner{
+    
+   display: grid;
+   grid-template-columns:   20% 20% 20%;
+
+ }
+ /* this transform  changes the color   when i I click on the card */
+
+.card{
+   background: #ffffff;
+    width: 300px;
+    padding: 4px ;
+    border-radius: 3px;
+    transition:  transform 0.5s ease , background-color 0.4s  ease;
+}
+
+.card:hover{
+
+transform: translateY(-15);
+background-color: #d1d9e1;
+}
+
+.card h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.card p{
+    font-size: 15px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.card button{
+    font-size: 10px;
+    margin-bottom: 10px;
+    background-color: #8897a9;
+    border-radius: 10px;
+    padding-left: 10px;
+  
+}
+.card-img{
+    width: 300px;
+    border-radius: 3px;
+    height: 100px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.burger-icon{
+    width:10%;
+    height:80%;
+   
+}
+.search-icon{
+    width:10%;
+    height:30%;
+}
+
+
+
+footer {
+    text-align: center;
+    
+  }
+
+.design {
+    color: #fdfdfd;
+    background-color: hsla(0, 100%, 90%, 0.3);
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+  }
+
+
+@media only screen and (max-width: 2000px) {
+    body {
+      background-color: rgb(95, 115, 161);
+    }
+    .nav-items{
+  
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+    
+    }
+    .burger-icon{
+        display: none;
+       
+    }
+    .cards-contaner{
+    
+        display: grid;
+        grid-template-columns:   50%  50%;
+       
+        justify-items: center;
+        gap: 10px;
+        
+     
+      }
+      .search-icon{
+        width:4%;
+        height:3%;
+    }
+    
+     
+  }
+
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(151, 166, 202);
+    
+    }
+    .nav-bar-item{
+  
+        display: none;
+       
+    }
+    .burger-icon{
+        display: flex;
+       
+       
+    }
+    .search-icon{
+        
+        display: none;
+       
+    }
+    .nav-items{
+  
+        display: flex;
+        justify-content:flex-end;
+        
+    
+    }
+    .cards-contaner{
+   
+       display: grid;
+       grid-template-columns: 80%;
+       justify-content: center;
+       gap: 10px;
+         
+     }
+   
+    
+
+    
+  }
+
